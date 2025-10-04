@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Become a LIC Agent | CareerInLIC</title>
+    <meta name="description"
+        content="Join LIC as an Insurance Advisor. Zero investment, flexible hours, free training, and strong earnings. Apply in 2 minutes—Mumbai & PAN-India." />
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN + explicit LIC colors -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                   colors: {
+                        // 'lic-blue': '#0F172A',
+                        // 'lic-yellow': '#F59E0B'
+                        // 'lic-blue': '#0057AE',
+                        // 'lic-yellow': '#F9D648'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0
+        }
+
+        /* Testimonial sizing */
+        .testimonial-card {
+            width: 100%;
+            max-width: 640px;
+            min-height: 140px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .testimonials-wrapper {
+            padding-bottom: 2.25rem;
+        }
+
+        /* Pagination styling (dots) */
+        .swiper-pagination {
+            position: relative;
+            margin-top: 1rem;
+            z-index: 20;
+            display: flex;
+            justify-content: center;
+            gap: .5rem;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            opacity: .6;
+            background: #CBD5E1;
+            border-radius: 9999px;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #0057AE;
+        }
+
+        /* Ensure lic-blue utility works for inline elements */
+        .text-lic-blue {
+            color: #0057AE;
+        }
+
+        .bg-lic-blue {
+            background-color: #0057AE;
+        }
+
+        .bg-lic-yellow {
+            background-color: #F9D648;
+        }
+
+        /* Small responsive tweak so testimonial cards have equal height appearance */
+        .testimonial-card>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-b from-indigo-50 to-amber-50 text-slate-800 font-sans">
+
+    <!-- Header -->
+    <!-- Header -->
+    <header id="siteHeader" class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+        <div class="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-between">
+            <div class="flex items-center gap-3 min-w-0">
+                <a href="#" class="shrink-0 inline-flex items-center">
+                    <span class="w-8 h-8 rounded bg-lic-blue text-white grid place-items-center font-extrabold">CL</span>
+                </a>
+                <div class="min-w-0">
+                    <div class="flex flex-wrap items-baseline gap-x-2 text-slate-900">
+                        <span class="font-extrabold truncate text-lic-blue">Gaurav Bailbhare</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-slate-600">
+                        <span class="font-semibold">Development Officer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-5 text-sm">
+                <a id="contactPhoneTop" href="tel:+917208822646"
+                    class="inline-flex items-center gap-2 hover:text-lic-blue">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" class="w-4 h-4">
+                        <path fill="currentColor"
+                            d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.4 22 2 13.6 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z" />
+                    </svg>
+                    +91 72088 22646
+                </a>
+                <a id="contactEmailTop" href="mailto:careerinlic@gmail.com"
+                    class="inline-flex items-center gap-2 hover:text-lic-blue">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" class="w-4 h-4">
+                        <path fill="currentColor"
+                            d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z" />
+                    </svg>
+                    careerinlic@gmail.com
+                </a>
+                <a id="applyTopBtn" href="#apply"
+                    class="inline-flex items-center gap-2 bg-lic-blue text-white px-4 py-2 rounded-xl shadow hover:bg-slate-900">Apply
+                    Now</a>
+            </div>
+
+            <button id="menuBtn"
+                class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-slate-200">
+                <span class="sr-only">Open menu</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" class="w-5 h-5">
+                    <path fill="currentColor" d="M4 6h16v2H4V6Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z" />
+                </svg>
+            </button>
+        </div>
+
+        <nav id="mainNav" class="md:border-t border-slate-200">
+            <div class="max-w-6xl mx-auto px-4">
+                <ul class="hidden md:flex items-center gap-6 text-sm py-2">
+                    <li><a id="navBenefits" href="#benefits" class="hover:text-lic-blue">Benefits</a></li>
+                    <li><a id="navProcess" href="#process" class="hover:text-lic-blue">Process</a></li>
+                    <li><a id="navEligibility" href="#eligibility" class="hover:text-lic-blue">Eligibility</a></li>
+                    <li><a id="navBlog" href="#blogs" class="hover:text-lic-blue">Blog</a></li>
+                    <li><a id="navAboutMe" href="#about" class="hover:text-lic-blue">About Me</a></li>
+                    <li class="ml-auto"><a id="navFaqs" href="#faqs" class="hover:text-lic-blue px-3 py-1.5">FAQs</a></li>
+                </ul>
+                <div id="mobilePanel" class="md:hidden hidden pb-3">
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <a href="#benefits" class="px-3 py-2 rounded-lg bg-white border">Benefits</a>
+                        <a href="#process" class="px-3 py-2 rounded-lg bg-white border">Process</a>
+                        <a href="#eligibility" class="px-3 py-2 rounded-lg bg-white border">Eligibility</a>
+                        <a href="#blogs" class="px-3 py-2 rounded-lg bg-white border">Blog</a>
+                        <a href="#about" class="px-3 py-2 rounded-lg bg-white border">About Me</a>
+                        <a href="#faqs" class="px-3 py-2 rounded-lg bg-white border">FAQs</a>
+                    </div>
+                    <div class="mt-3 grid gap-2">
+                        <a href="tel:+917208822646"
+                            class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white border">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" class="w-4 h-4">
+                                <path fill="currentColor"
+                                    d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.4 22 2 13.6 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z" />
+                            </svg>
+                            <span id="contactPhoneLbl">Call:</span> +91 72088 22646
+                        </a>
+                        <a href="mailto:careerinlic@gmail.com"
+                            class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white border">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" class="w-4 h-4">
+                                <path fill="currentColor"
+                                    d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z" />
+                            </svg>
+                            careerinlic@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 py-12 md:py-15 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <span
+                    class="inline-flex items-center text-xs font-semibold uppercase tracking-wider bg-slate-900 text-white rounded-full px-3 py-1">Recruiting
+                    LIC Agents</span>
+                <h1 class="mt-4 text-3xl md:text-5xl font-extrabold leading-tight">
+                    Build a High-Earning Career as a <span class="text-lic-blue">LIC Agent</span>
+                </h1>
+                <p class="mt-4 text-lg text-slate-700">Flexible hours, zero investment, free training—and income that
+                    grows every year with renewals. Start part-time or full-time.</p>
+
+                <ul class="mt-6 grid grid-cols-2 gap-3 text-sm">
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 bg-lic-blue rounded-full"></span> Free
+                        study material</li>
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 bg-lic-blue rounded-full"></span> IRDAI
+                        exam guidance</li>
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 bg-lic-blue rounded-full"></span> Work from
+                        anywhere</li>
+                    <li class="flex items-center gap-2"><span class="w-2 h-2 bg-lic-blue rounded-full"></span>
+                        Attractive commissions</li>
+                </ul>
+
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <a href="#apply"
+                        class="inline-flex items-center bg-lic-blue text-white font-semibold px-5 py-3 rounded-xl hover:bg-slate-900 transition">Apply
+                        in 2 minutes</a>
+                    <a href="#process"
+                        class="inline-flex items-center font-semibold px-5 py-3 rounded-xl border border-slate-300 hover:bg-white transition">See
+                        process</a>
+                </div>
+                <p class="mt-4 text-xs text-slate-500">Mumbai based | PAN-India onboarding possible</p>
+            </div>
+
+            <div class="relative">
+                <div class="aspect-[4/3] rounded-2xl shadow-2xl bg-white p-4">
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="p-4 rounded-xl bg-amber-50 border border-amber-100">
+                            <p class="text-2xl font-extrabold text-lic-blue">25%*</p>
+                            <p class="text-sm">First-year commission</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-blue-50 border border-blue-100">
+                            <p class="text-2xl font-extrabold text-lic-blue">7.5% → 5%*</p>
+                            <p class="text-sm">Renewal commission</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-amber-50 border border-amber-100">
+                            <p class="text-2xl font-extrabold text-lic-blue">Free</p>
+                            <p class="text-sm">Training & materials</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-blue-50 border border-blue-100">
+                            <p class="text-2xl font-extrabold text-lic-blue">Flexible</p>
+                            <p class="text-sm">Work hours & location</p>
+                        </div>
+                    </div>
+                    <p class="text-[10px] mt-3 text-slate-500">*Indicative under standard LIC tables; subject to
+                        LIC/IRDAI rules.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social proof strip -->
+    <section class="bg-white/70 border-y">
+        <div class="max-w-6xl mx-auto px-4 py-6 grid sm:grid-cols-3 gap-4 text-center">
+            <div>
+                <p class="text-2xl font-extrabold text-lic-blue">Zero</p>
+                <p class="text-sm">Investment to start</p>
+            </div>
+            <div>
+                <p class="text-2xl font-extrabold text-lic-blue">25 hrs</p>
+                <p class="text-sm">Training support</p>
+            </div>
+            <div>
+                <p class="text-2xl font-extrabold text-lic-blue">PAN-India</p>
+                <p class="text-sm">Onboarding assistance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center">Why become a LIC Agent?</h2>
+        <p class="mt-3 text-center text-slate-600 max-w-2xl mx-auto">Turn your network into steady income with renewals,
+            earn recognition, and build a career that grows every year.</p>
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+            <div class="p-6 bg-white border rounded-2xl shadow-sm">
+                <h3 class="font-bold">Strong Earning Potential</h3>
+                <p class="mt-2 text-sm">Earn up to 25% first-year commission and 7.5% on policy renewals. Build passive income that compounds annually.</p>
+            </div>
+            <div class="p-6 bg-white border rounded-2xl shadow-sm">
+                <h3 class="font-bold">Flexible Work Schedule</h3>
+                <p class="mt-2 text-sm">Work part-time or full-time on your own terms. Perfect for students, homemakers, or as a side business.</p>
+            </div>
+            <div class="p-6 bg-white border rounded-2xl shadow-sm">
+                <h3 class="font-bold">Training & Recognition</h3>
+                <p class="mt-2 text-sm">Free study material, mentorship, and eligibility for recognition programs &
+                    clubs.</p>
+            </div>
+        </div>
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+            <div class="p-6 bg-white border rounded-2xl shadow-sm">
+                <h3 class="font-bold">Recognition Programs</h3>
+                <p class="mt-2 text-sm">Qualify for LIC's prestigious recognition clubs, awards, and incentive programs based on performance.</p>
+            </div>
+            <div class="p-6 bg-white border rounded-2xl shadow-sm">
+                <h3 class="font-bold">Work From Anywhere</h3>
+                <p class="mt-2 text-sm">No office required. Meet clients at their convenience or conduct business entirely online.</p>
+            </div>
+            <div class="p-6 bg-white border rounded-2xl shadow-sm">
+                <h3 class="font-bold">Zero Investment</h3>
+                <p class="mt-2 text-sm">No franchise fees, no deposits. Start your career with absolutely no upfront investment required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="bg-white/70 border-y">
+        <div class="max-w-6xl mx-auto px-4 py-14">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-center">Simple 5-step process</h2>
+            <div class="mt-8 grid md:grid-cols-5 gap-4">
+                <div class="p-5 rounded-xl bg-amber-50 border border-amber-200">
+                    <div
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-white/80 text-amber-600">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5">
+                            <path fill="currentColor"
+                                d="M9 2h6a2 2 0 012 2h1a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h1a2 2 0 012-2Zm0 2v2h6V4H9Z" />
+                        </svg>
+                    </div>
+                    <p class="mt-2 text-xs font-semibold">Step 1</p>
+                    <h3 class="font-bold">Apply</h3>
+                    <p class="text-sm mt-1">Share your details. We’ll call to guide next steps.</p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-blue-50 border border-blue-200">
+                    <div class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-white/80 text-blue-600">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5">
+                            <path fill="currentColor"
+                                d="M20 5H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V7a2 2 0 00-2-2Zm-9 3h2v2h-2V8Zm-5 0h4v4H6V8Zm12 8H6v-2h12v2Zm0-4h-6v-2h6v2Z" />
+                        </svg>
+                    </div>
+                    <p class="mt-2 text-xs font-semibold">Step 2</p>
+                    <h3 class="font-bold">Documentation</h3>
+                    <p class="text-sm mt-1">Basic KYC, education & bank details.</p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-amber-50 border border-amber-200">
+                    <div
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-white/80 text-amber-600">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5">
+                            <path fill="currentColor"
+                                d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-5 9.27V16l5 3 5-3v-3.73L12 15l-5-2.73Z" />
+                        </svg>
+                    </div>
+                    <p class="mt-2 text-xs font-semibold">Step 3</p>
+                    <h3 class="font-bold">Training (25 hrs)</h3>
+                    <p class="text-sm mt-1">Online/offline with our material & support.</p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-blue-50 border border-blue-200">
+                    <div class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-white/80 text-blue-600">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5">
+                            <path fill="currentColor"
+                                d="M6 2h9a2 2 0 012 2v7a5 5 0 11-4 8.66L10 22v-4.34A5 5 0 016 11V4a2 2 0 012-2Zm2 2v7a3 3 0 106 0V4H8Z" />
+                        </svg>
+                    </div>
+                    <p class="mt-2 text-xs font-semibold">Step 4</p>
+                    <h3 class="font-bold">IRDAI Exam</h3>
+                    <p class="text-sm mt-1">Online exam; we help you prepare.</p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-amber-50 border border-amber-200">
+                    <div
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-white/80 text-amber-600">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5">
+                            <path fill="currentColor"
+                                d="M12 2 4 5v6c0 6 8 11 8 11s8-5 8-11V5l-8-3Zm-1 14-3.5-3.5 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 7Z" />
+                        </svg>
+                    </div>
+                    <p class="mt-2 text-xs font-semibold">Step 5</p>
+                    <h3 class="font-bold">License</h3>
+                    <p class="text-sm mt-1">Get appointed as LIC Agent and start selling.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a href="#apply"
+                    class="inline-flex items-center bg-lic-blue text-white font-semibold px-6 py-3 rounded-xl hover:bg-slate-900 transition">Start
+                    now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility -->
+    <section id="eligibility" class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center">Eligibility & Documents</h2>
+        <div class="mt-8 grid md:grid-cols-2 gap-8">
+            <div class="p-6 bg-white border rounded-2xl shadow-sm">
+                <h3 class="font-bold">Minimum</h3>
+                <ul class="mt-2 list-disc pl-5 text-sm space-y-1">
+                    <li>Age: 18+ years</li>
+                    <li>Education: 10th pass (12th/Graduates preferred)</li>
+                    <li>Good communication & network</li>
+                </ul>
+            </div>
+            <div class="p-6 bg-white border rounded-2xl shadow-sm">
+                <h3 class="font-bold">Documents</h3>
+                <ul class="mt-2 list-disc pl-5 text-sm space-y-1">
+                    <li>Photo, PAN, Aadhaar/Address proof</li>
+                    <li>10th/12th/Graduation marksheet</li>
+                    <li>Cancelled cheque / passbook</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Swiper carousel) -->
+    <section class="bg-white/70 border-y">
+        <div class="max-w-6xl mx-auto px-4 py-14">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-center">Success stories</h2>
+
+            <div class="mt-8 testimonials-wrapper">
+                <div class="swiper" id="testiSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- 8 slides (placeholders) -->
+                        <div class="swiper-slide">
+                            <article
+                                class="testimonial-card p-6 bg-white border rounded-2xl shadow-sm flex gap-4 items-start">
+                                <img src="https://picsum.photos/seed/agent1/96/96" alt="Ashutosh M"
+                                    class="w-20 h-20 rounded-full object-cover shadow-sm" />
+                                <div>
+                                    <blockquote class="text-sm">“I started part-time during college, cleared IRDAI
+                                        quickly with the team’s help and now earn steady renewals.”</blockquote>
+                                    <figcaption class="mt-3 text-xs font-semibold text-slate-600">— Ashutosh M., Agent
+                                    </figcaption>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article
+                                class="testimonial-card p-6 bg-white border rounded-2xl shadow-sm flex gap-4 items-start">
+                                <img src="https://picsum.photos/seed/agent2/96/96" alt="Ujwala W"
+                                    class="w-20 h-20 rounded-full object-cover shadow-sm" />
+                                <div>
+                                    <blockquote class="text-sm">“Flexible hours helped me manage home & work.
+                                        Recognition programs keep me motivated.”</blockquote>
+                                    <figcaption class="mt-3 text-xs font-semibold text-slate-600">— Ujwala W., Agent
+                                    </figcaption>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article
+                                class="testimonial-card p-6 bg-white border rounded-2xl shadow-sm flex gap-4 items-start">
+                                <img src="https://picsum.photos/seed/agent3/96/96" alt="Devendra M"
+                                    class="w-20 h-20 rounded-full object-cover shadow-sm" />
+                                <div>
+                                    <blockquote class="text-sm">“My business skills translated perfectly. Income growth
+                                        from renewals is the best part.”</blockquote>
+                                    <figcaption class="mt-3 text-xs font-semibold text-slate-600">— Devendra M., Agent
+                                    </figcaption>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article
+                                class="testimonial-card p-6 bg-white border rounded-2xl shadow-sm flex gap-4 items-start">
+                                <img src="https://picsum.photos/seed/agent4/96/96" alt="Rina K"
+                                    class="w-20 h-20 rounded-full object-cover shadow-sm" />
+                                <div>
+                                    <blockquote class="text-sm">“Started with no experience — training and leads helped
+                                        me build a steady client base.”</blockquote>
+                                    <figcaption class="mt-3 text-xs font-semibold text-slate-600">— Rina K., Agent
+                                    </figcaption>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article
+                                class="testimonial-card p-6 bg-white border rounded-2xl shadow-sm flex gap-4 items-start">
+                                <img src="https://picsum.photos/seed/agent5/96/96" alt="Sanjay P"
+                                    class="w-20 h-20 rounded-full object-cover shadow-sm" />
+                                <div>
+                                    <blockquote class="text-sm">“With consistent follow-up and renewal focus I now earn
+                                        recurring income every month.”</blockquote>
+                                    <figcaption class="mt-3 text-xs font-semibold text-slate-600">— Sanjay P., Agent
+                                    </figcaption>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article
+                                class="testimonial-card p-6 bg-white border rounded-2xl shadow-sm flex gap-4 items-start">
+                                <img src="https://picsum.photos/seed/agent6/96/96" alt="Meera S"
+                                    class="w-20 h-20 rounded-full object-cover shadow-sm" />
+                                <div>
+                                    <blockquote class="text-sm">“The mentorship program helped me convert leads and
+                                        scale quickly in year two.”</blockquote>
+                                    <figcaption class="mt-3 text-xs font-semibold text-slate-600">— Meera S., Agent
+                                    </figcaption>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article
+                                class="testimonial-card p-6 bg-white border rounded-2xl shadow-sm flex gap-4 items-start">
+                                <img src="https://picsum.photos/seed/agent7/96/96" alt="Rohit D"
+                                    class="w-20 h-20 rounded-full object-cover shadow-sm" />
+                                <div>
+                                    <blockquote class="text-sm">“I balanced agency work with a full-time job and
+                                        gradually transitioned to full-time after 18 months.”</blockquote>
+                                    <figcaption class="mt-3 text-xs font-semibold text-slate-600">— Rohit D., Agent
+                                    </figcaption>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article
+                                class="testimonial-card p-6 bg-white border rounded-2xl shadow-sm flex gap-4 items-start">
+                                <img src="https://picsum.photos/seed/agent8/96/96" alt="Priya L"
+                                    class="w-20 h-20 rounded-full object-cover shadow-sm" />
+                                <div>
+                                    <blockquote class="text-sm">“Renewal focus and client service made my income
+                                        predictable; proud to be part of the team.”</blockquote>
+                                    <figcaption class="mt-3 text-xs font-semibold text-slate-600">— Priya L., Agent
+                                    </figcaption>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination only (no arrows) -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
+        <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
+            <!-- Section header -->
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="mt-4 text-3xl md:text-4xl font-extrabold">About Gaurav Bailbhare</h2>
+                <p class="mt-3 text-lg text-slate-600">Development Officer helping you build a thriving LIC agency career
+                </p>
+            </div>
+    
+            <!-- Main content -->
+            <div class="grid lg:grid-cols-5 gap-8 items-start">
+                <!-- Left: Image + Quick stats -->
+                <div class="lg:col-span-2">
+                    <div class="sticky top-24">
+                        <!-- Profile image -->
+                        <div
+                            class="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-slate-200 to-slate-300">
+                            <img src="https://picsum.photos/seed/gaurav-profile/800/1000"
+                                alt="Gaurav Bailbhare - LIC Development Officer" class="w-full h-full object-cover" />
+    
+                            <!-- Floating badge -->
+                            <div
+                                class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg px-4 py-2 border border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                                    <span class="text-xs font-semibold text-slate-900">Available</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Quick stats grid -->
+                        <div class="mt-6 grid grid-cols-2 gap-3">
+                            <div class="bg-white border border-slate-200 rounded-2xl p-4 text-center shadow-sm">
+                                <p class="text-3xl font-extrabold text-lic-blue">5+</p>
+                                <p class="text-xs text-slate-600 mt-1">Years Experience</p>
+                            </div>
+                            <div class="bg-white border border-slate-200 rounded-2xl p-4 text-center shadow-sm">
+                                <p class="text-3xl font-extrabold text-lic-blue">150+</p>
+                                <p class="text-xs text-slate-600 mt-1">Agents Trained</p>
+                            </div>
+                            <div class="bg-white border border-slate-200 rounded-2xl p-4 text-center shadow-sm">
+                                <p class="text-3xl font-extrabold text-lic-blue">95%</p>
+                                <p class="text-xs text-slate-600 mt-1">Exam Pass Rate</p>
+                            </div>
+                            <div class="bg-white border border-slate-200 rounded-2xl p-4 text-center shadow-sm">
+                                <p class="text-3xl font-extrabold text-lic-blue">Mumbai</p>
+                                <p class="text-xs text-slate-600 mt-1">Based, PAN-India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right: Content -->
+                <div class="lg:col-span-3 space-y-6">
+                    <!-- Intro -->
+                    <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm">
+                        <h3 class="text-xl font-bold text-slate-900">Building careers, one agent at a time</h3>
+                        <p class="mt-3 text-slate-700 leading-relaxed">As a Development Officer at LIC, I've dedicated my
+                            career to helping aspiring professionals discover the incredible opportunities in insurance.
+                            Whether you're a student, homemaker, or professional looking for flexible income—I provide the
+                            guidance, training, and support to help you succeed.</p>
+                        <p class="mt-3 text-slate-700 leading-relaxed">My approach is simple: personalized mentorship,
+                            practical training, and ongoing support even after you're licensed. Your success is my success.
+                        </p>
+                    </div>
+    
+                    <!-- What I offer -->
+                    <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm">
+                        <h3 class="text-xl font-bold text-slate-900 mb-5">What I bring to your journey</h3>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="flex gap-3">
+                                <div
+                                    class="shrink-0 w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 text-lic-blue">
+                                        <path fill="currentColor"
+                                            d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3Zm-5 9.27V16l5 3 5-3v-3.73L12 15l-5-2.73Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm">Expert Training</p>
+                                    <p class="text-xs text-slate-600 mt-1">Complete IRDAI exam prep with study material &
+                                        mock tests</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex gap-3">
+                                <div
+                                    class="shrink-0 w-10 h-10 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center">
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 text-amber-600">
+                                        <path fill="currentColor"
+                                            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm">Ongoing Mentorship</p>
+                                    <p class="text-xs text-slate-600 mt-1">Regular guidance on sales strategies & business
+                                        growth</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex gap-3">
+                                <div
+                                    class="shrink-0 w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 text-lic-blue">
+                                        <path fill="currentColor"
+                                            d="M9 2h6a2 2 0 012 2h1a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h1a2 2 0 012-2Zm0 2v2h6V4H9Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm">Documentation Help</p>
+                                    <p class="text-xs text-slate-600 mt-1">Step-by-step assistance with paperwork &
+                                        onboarding</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex gap-3">
+                                <div
+                                    class="shrink-0 w-10 h-10 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center">
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 text-amber-600">
+                                        <path fill="currentColor"
+                                            d="M12 2L4 5v6c0 6 8 11 8 11s8-5 8-11V5l-8-3Zm-1 14-3.5-3.5 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 7Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm">Proven Track Record</p>
+                                    <p class="text-xs text-slate-600 mt-1">150+ successful agents with high exam pass rates
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- CTA buttons -->
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#apply"
+                            class="inline-flex items-center gap-2 bg-lic-blue text-white font-semibold px-6 py-3.5 rounded-xl shadow-sm hover:bg-slate-900 transition">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5">
+                                <path fill="currentColor"
+                                    d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2Zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6Zm7 13H5v-1c0-2.33 4.67-3.5 7-3.5s7 1.17 7 3.5v1Z" />
+                            </svg>
+                            Start your application
+                        </a>
+                        <a href="tel:+917208822646"
+                            class="inline-flex items-center gap-2 font-semibold px-6 py-3.5 rounded-xl border-2 border-slate-300 hover:bg-white hover:border-lic-blue transition">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5">
+                                <path fill="currentColor"
+                                    d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.4 22 2 13.6 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z" />
+                            </svg>
+                            Call: +91 72088 22646
+                        </a>
+                    </div>
+    
+                    <!-- Trust badge -->
+                    <div class="bg-gradient-to-r from-amber-50 to-blue-50 border border-amber-100 rounded-2xl p-5">
+                        <div class="flex items-start gap-3">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 text-amber-600 shrink-0">
+                                <path fill="currentColor"
+                                    d="M12 2L4 5v6c0 6 8 11 8 11s8-5 8-11V5l-8-3Zm-1 14-3.5-3.5 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 7Z" />
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-sm text-slate-900">Trusted by aspiring agents across Mumbai &
+                                    beyond</p>
+                                <p class="text-xs text-slate-600 mt-1">Personalized support from application to your first
+                                    commission—and beyond.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blogs" class="max-w-6xl mx-auto px-4 py-14">
+        <div class="flex items-end justify-between gap-4">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-extrabold">From the blog</h2>
+                <p class="mt-2 text-slate-600">Tips, guides, and licensing updates for aspiring LIC agents.</p>
+            </div>
+            <a href="/blog"
+                class="hidden sm:inline-flex items-center font-semibold px-4 py-2 rounded-xl border border-slate-300 hover:bg-white">View
+                all</a>
+        </div>
+        <div id="blogList" class="mt-8 grid md:grid-cols-3 gap-6">
+            <!-- JS will populate cards (or you can paste static cards here) -->
+        </div>
+    </section>
+
+    <!-- Apply form -->
+    <section id="apply" class="max-w-6xl mx-auto px-4 py-14">
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-extrabold">Apply to become a LIC Agent</h2>
+                <p class="mt-2 text-slate-600">Takes less than 2 minutes. We’ll call you to share next steps and
+                    schedule training.</p>
+                <div class="mt-6 text-sm bg-amber-50 border border-amber-100 rounded-xl p-4">
+                    <p class="font-semibold">Quick tip</p>
+                    <p class="text-slate-700 mt-1">Keep your PAN, Aadhaar and education details handy for faster
+                        onboarding.</p>
+                </div>
+            </div>
+
+            <form id="leadForm" class="bg-white border rounded-2xl shadow-sm p-6 grid gap-4">
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <label class="grid gap-1 text-sm"><span>Full Name</span><input required name="name"
+                            class="border rounded-lg px-3 py-2" maxlength="75" /></label>
+                    <label class="grid gap-1 text-sm"><span>Mobile</span><input required name="phone"
+                            inputmode="numeric" pattern="[0-9]{10,12}" class="border rounded-lg px-3 py-2"
+                            maxlength="12" /></label>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <label class="grid gap-1 text-sm"><span>Email</span><input required type="email" name="email"
+                            class="border rounded-lg px-3 py-2" maxlength="75" /></label>
+                    <label class="grid gap-1 text-sm"><span>City</span><input required name="city"
+                            class="border rounded-lg px-3 py-2" maxlength="50" /></label>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <label class="grid gap-1 text-sm"><span>Profession</span><input required name="profession"
+                            class="border rounded-lg px-3 py-2" maxlength="50" /></label>
+                    <label class="grid gap-1 text-sm"><span>Pincode</span><input required name="pincode"
+                            inputmode="numeric" pattern="[0-9]{4,6}" class="border rounded-lg px-3 py-2"
+                            maxlength="6" /></label>
+                </div>
+
+                <label class="grid gap-1 text-sm"><span>Message (optional)</span><textarea name="message" rows="3"
+                        class="border rounded-lg px-3 py-2"
+                        placeholder="Tell us your goal (part-time, full-time, student, etc.)"></textarea></label>
+
+                <label class="flex items-start gap-2 text-xs"><input type="checkbox" required class="mt-1" /><span>I
+                        agree to be contacted on my mobile/email for information about LIC agency onboarding and
+                        training.</span></label>
+
+                <button id="submitBtn"
+                    class="mt-2 bg-lic-blue text-white font-semibold rounded-xl px-5 py-3 hover:bg-slate-900">Submit
+                    application</button>
+                <a id="waLink" target="_blank"
+                    class="text-center border rounded-xl px-5 py-3 font-semibold hover:bg-white" href="#"
+                    aria-label="Apply via WhatsApp">Or apply on WhatsApp</a>
+                <p class="text-[11px] text-slate-500">We never ask for fees on chat. Official fees (if any) are per
+                    LIC/IRDAI rules and are communicated formally.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" class="bg-white/70 border-y">
+        <div class="max-w-6xl mx-auto px-4 py-14">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-center">FAQ</h2>
+            <div class="mt-8 grid md:grid-cols-2 gap-6">
+                <details class="bg-white border rounded-2xl p-5">
+                    <summary class="font-semibold cursor-pointer">Do I need to pass the IRDAI exam?</summary>
+                    <p class="mt-2 text-sm">Yes. We provide training and mock tests so you clear it with confidence.</p>
+                </details>
+                <details class="bg-white border rounded-2xl p-5">
+                    <summary class="font-semibold cursor-pointer">Is this suitable part-time?</summary>
+                    <p class="mt-2 text-sm">Absolutely. Many agents start alongside a job or studies and later go
+                        full-time.</p>
+                </details>
+                <details class="bg-white border rounded-2xl p-5">
+                    <summary class="font-semibold cursor-pointer">How much can I earn?</summary>
+                    <p class="mt-2 text-sm">Earnings depend on your business. First-year commissions + renewals create
+                        growing income over time.</p>
+                </details>
+                <details class="bg-white border rounded-2xl p-5">
+                    <summary class="font-semibold cursor-pointer">Locations you onboard?</summary>
+                    <p class="mt-2 text-sm">Mumbai & nearby preferred; PAN-India onboarding is possible case-to-case via
+                        online process.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 py-14">
+        <div class="grid md:grid-cols-2 gap-10">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-extrabold">Get in touch</h2>
+                <ul class="mt-6 space-y-3 text-sm">
+                    <li><strong>Address:</strong> LIC Branch 909, 5th floor, Bombay Mutual Terrace, Charni Road East,
+                        Mumbai, MH 400007</li>
+                    <li><strong>Phone:</strong> <a class="text-lic-blue underline" href="tel:+917208822646">+91 72088
+                            22646</a> (SBA Gaurav Bailbhare)</li>
+                    <li><strong>Email:</strong> <a class="text-lic-blue underline"
+                            href="mailto:careerinlic@gmail.com">careerinlic@gmail.com</a></li>
+                </ul>
+                <p class="text-[11px] text-slate-500 mt-4">This page is a personal website of the Development Officer
+                    for recruitment/awareness. LIC and IRDAI trademarks belong to their respective owners.
+                    Benefits/percentages are indicative and subject to change.</p>
+            </div>
+            <div class="bg-white border rounded-2xl shadow-sm p-6">
+                <h3 class="font-bold">Need guidance?</h3>
+                <p class="text-sm text-slate-600 mt-1">Share your goal and we’ll suggest a plan to get started.</p>
+                <a href="#apply"
+                    class="mt-4 inline-flex items-center bg-lic-blue text-white font-semibold px-5 py-3 rounded-xl hover:bg-slate-900">Apply
+                    now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-8 text-sm flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex flex-col sm:flex-row items-center gap-3">
+                <p class="m-0">© <span id="yr"></span> Gaurav Bhailbhare. All rights reserved.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-4">
+                <nav class="flex gap-4">
+                    <a href="#benefits" class="hover:opacity-90">Benefits</a>
+                    <a href="#process" class="hover:opacity-90">Process</a>
+                    <a href="#blogs" class="hover:opacity-90">Blog</a>
+                    <a href="#faqs" class="hover:opacity-90">FAQs</a>
+                    <a href="#apply" class="hover:opacity-90">Apply</a>
+                </nav>
+
+                <!-- New legal links -->
+                <nav class="flex gap-3 items-center">
+                    <a href="/terms" class="text-xs hover:underline">Terms of Use</a>
+                    <span class="text-slate-600">|</span>
+                    <a href="/privacy" class="text-xs hover:underline">Privacy Policy</a>
+                    <span class="text-slate-600">|</span>
+                    <a href="/disclaimer" class="text-xs hover:underline">Disclaimer</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp CTA -->
+    <a id="ctaWA" target="_blank"
+        class="fixed bottom-4 right-4 bg-green-500 text-white font-bold py-3 px-4 rounded-full shadow-lg hover:translate-y-0.5 transition"
+        href="#">Apply on WhatsApp</a>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+            // --- header behaviors ---
+            (function () {
+                const hdr = document.getElementById('siteHeader');
+                const onScroll = () => hdr.classList.toggle('shadow', window.scrollY > 4);
+                onScroll(); document.addEventListener('scroll', onScroll, { passive: true });
+
+                const btn = document.getElementById('menuBtn');
+                const panel = document.getElementById('mobilePanel');
+                if (btn && panel) { btn.addEventListener('click', () => panel.classList.toggle('hidden')); }
+            })();
+
+        // --- year ---
+        document.getElementById('yr').textContent = new Date().getFullYear();
+
+        // --- lead form -> WhatsApp ---
+        (function () {
+            const form = document.getElementById('leadForm');
+            const waLink = document.getElementById('waLink');
+            const ctaWA = document.getElementById('ctaWA');
+
+            function buildWALink(data) {
+                const phone = '917208822646';
+                const msg = `LIC Agent Application%0AName: ${encodeURIComponent(data.name || '')}%0AMobile: ${encodeURIComponent(data.phone || '')}%0AEmail: ${encodeURIComponent(data.email || '')}%0ACity: ${encodeURIComponent(data.city || '')}%0AProfession: ${encodeURIComponent(data.profession || '')}%0APincode: ${encodeURIComponent(data.pincode || '')}%0AMessage: ${encodeURIComponent(data.message || '')}`;
+                return `https://wa.me/${phone}?text=${msg}`;
+            }
+
+            function currentFormData() {
+                const fd = new FormData(form); return Object.fromEntries(fd.entries());
+            }
+
+            function syncWALinks() { const link = buildWALink(currentFormData()); if (waLink) waLink.href = link; if (ctaWA) ctaWA.href = link; }
+
+            form.addEventListener('input', syncWALinks);
+            document.addEventListener('DOMContentLoaded', syncWALinks);
+            form.addEventListener('submit', function (e) { e.preventDefault(); window.open(buildWALink(currentFormData()), '_blank'); });
+        })();
+
+        // --- render blog cards (dummy) ---
+        document.addEventListener('DOMContentLoaded', function () {
+            const blogPosts = [
+                { title: "How to become a LIC Agent: Step-by-step", excerpt: "Eligibility, documents, training hours, and how to clear IRDAI on the first attempt.", url: "#", date: "2025-08-01", tag: "Getting started" },
+                { title: "LIC Agent earnings explained (commissions & renewals)", excerpt: "Understand first-year vs renewal income and how to build stable long-term earnings.", url: "#", date: "2025-07-18", tag: "Income" },
+                { title: "IRDAI exam guide: syllabus, tips, mock tests", excerpt: "What to study, where to practice, and time-management strategies for exam day.", url: "#", date: "2025-06-10", tag: "Exam prep" }
+            ];
+            const wrap = document.getElementById('blogList');
+            if (!wrap) return;
+            wrap.innerHTML = blogPosts.map(p => `
+        <article class="bg-white border rounded-2xl shadow-sm overflow-hidden flex flex-col">
+          <div class="p-5 flex-1">
+            <div class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">${p.tag}</div>
+            <h3 class="mt-1 font-bold text-lg">${p.title}</h3>
+            <p class="mt-2 text-sm text-slate-600">${p.excerpt}</p>
+          </div>
+          <div class="px-5 pb-5">
+            <a href="${p.url}" class="inline-flex items-center font-semibold text-lic-blue hover:underline">Read more →</a>
+            <span class="ml-3 text-xs text-slate-500">${new Date(p.date).toLocaleDateString()}</span>
+          </div>
+        </article>`).join('');
+        });
+
+        // --- Initialize Swiper (dots only, autoplay 2s, 2 cards per view on md+) ---
+        document.addEventListener('DOMContentLoaded', function () {
+            new Swiper('#testiSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                autoplay: { delay: 2000, disableOnInteraction: false },
+                pagination: { el: '.swiper-pagination', clickable: true },
+                watchOverflow: true,
+                breakpoints: {
+                    768: { slidesPerView: 2 },
+                    1200: { slidesPerView: 2 }
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.getElementById('siteHeader');
+
+            function updateHeaderVar() {
+                const h = header ? header.getBoundingClientRect().height : 0;
+                document.documentElement.style.setProperty('--site-header-height', `${Math.round(h)}px`);
+            }
+
+            // set initially and on resize (header may change with menu open)
+            updateHeaderVar();
+            window.addEventListener('resize', updateHeaderVar);
+
+            // intercept in-page anchor clicks and scroll with offset (smooth)
+            document.querySelectorAll('a[href^="#"]').forEach(a => {
+                a.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (!targetId || targetId === '#' || targetId === '#!') return; // ignore non-targets
+                    const el = document.querySelector(targetId);
+                    if (!el) return;
+
+                    e.preventDefault();
+
+                    // compute offset: header height + small gap
+                    const headerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--site-header-height')) || 0;
+                    const gap = 12;
+
+                    const top = el.getBoundingClientRect().top + window.pageYOffset - (headerHeight + gap - 10);
+
+                    window.scrollTo({ top, behavior: 'smooth' });
+
+                    // optionally update URL hash without jumping
+                    history.pushState(null, '', targetId);
+                });
+            });
+
+            // if someone opens page with hash in URL, ensure correct offset
+            if (location.hash) {
+                const el = document.querySelector(location.hash);
+                if (el) {
+                    setTimeout(() => {
+                        const headerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--site-header-height')) || 0;
+                        const gap = 12;
+                        const top = el.getBoundingClientRect().top + window.pageYOffset - (headerHeight + gap);
+                        window.scrollTo({ top, behavior: 'instant' });
+                    }, 50);
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
